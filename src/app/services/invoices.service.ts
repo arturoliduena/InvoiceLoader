@@ -43,4 +43,10 @@ export class InvoicesService {
     return +('' + n).replace(',', '.');
   }
 
+  getValue() {
+    return {
+      totalScreen: this.totalScreen,
+      invoicesArray: this.invoicesArray,
+    }
+  }
 }
